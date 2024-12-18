@@ -11,6 +11,7 @@ const ResponseForm = () => {
     try {
       const response = await fetch(`${API_BASE_URL}/response/${negotiationId}`, {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
