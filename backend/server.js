@@ -13,7 +13,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: "https://negotiation-plugin-frontend.vercel.app",
   methods: ["POST","GET"],
   credentials: true
 }));
