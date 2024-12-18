@@ -35,6 +35,9 @@ app.use(cors({
   methods: ["POST","GET"],
   credentials: true
 }));
+
+
+app.options('*', cors())
 app.use(bodyParser.json());
 
 // Routes
