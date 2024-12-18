@@ -6,6 +6,7 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 export const createOffer = async (buyerEmail, sellerEmail, offerAmount) => {
   const response = await fetch(`${API_BASE_URL}/offer`, {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
