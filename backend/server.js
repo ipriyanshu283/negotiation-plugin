@@ -10,13 +10,13 @@ const app = express();
 
 // Connect to MongoDB
 connectDB();
-app.use(cors(*));
+// app.use(cors(*));
 // Middleware
-// app.use(cors({
-//   origin: "https://negotiation-plugin-frontend.vercel.app",
-//   methods: ["POST","GET"],
-//   credentials: true
-// }));
+app.use(cors({
+  origin: "https://negotiation-plugin-frontend.vercel.app",
+  methods: ["POST","GET"],
+  credentials: true
+}));
 app.use(bodyParser.json());
 
 // Routes
