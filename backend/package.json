@@ -1,0 +1,19 @@
+{
+  "name": "negotiation-plugin",
+  "version": "1.0.0",
+  "description": "Backend for handling negotiations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.13",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
